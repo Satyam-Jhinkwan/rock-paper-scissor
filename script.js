@@ -18,12 +18,12 @@ const drawGame = () => {
 
 const showWinner = (userWin, userChoice, compChoice) => {
   if (userWin) {
-    msg.innerText = `You Win! ${userChoice} beats ${compChoice}`;
+    msg.innerText = `You Win! Your ${userChoice} beats ${compChoice}`;
     userScore++;
     userStat.innerText = userScore;
     msg.style.backgroundColor = "green";
   } else {
-    msg.innerText = `You Lose! ${compChoice} beats ${userChoice}`;
+    msg.innerText = `You Lose! ${compChoice} beats Your ${userChoice}`;
     compScore++;
     compStat.innerText = compScore;
     msg.style.backgroundColor = "red";
